@@ -58,7 +58,7 @@ export abstract class AbstractServer extends EventEmitter {
                 const serverArguments = await this.resolveServerArguments(this.args.gdbServerArguments);
                 this.process = spawn(command, serverArguments, {
                     cwd: dirname(command),
-                    env: this.resolveServerEnv(this.args.gdbServerEnv ? this.args.gdbServerEnv as  NodeJS.ProcessEnv : undefined )
+                    env: this.resolveServerEnv(this.args.gdbServerEnv ? this.args.gdbServerEnv as NodeJS.ProcessEnv : undefined )
                 });
 
                 if (!this.process) {
