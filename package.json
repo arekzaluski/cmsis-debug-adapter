@@ -99,8 +99,7 @@
               },
               "gdbServerEnv": {
                 "description": "GDB server process env",
-                "type": "Object",
-                "default": {}
+                "type": "object"
               },
               "objdump": {
                 "type": "string",
@@ -164,9 +163,8 @@
                 "default": []
               },
               "gdbServerEnv": {
-                "description": "Additional arguments to pass to GDB server",
-                "type": "Object",
-                "default": {}
+                "description": "GDB server process env",
+                "type": "object"
               },
               "objdump": {
                 "type": "string",
