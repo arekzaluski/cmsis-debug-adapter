@@ -39,6 +39,7 @@ export interface CmsisRequestArguments extends RequestArguments {
     gdbCore?: number;
     gdbServer?: string;
     gdbServerArguments?: string[];
+    gdbServerEnv?: Object;
     objdump?: string;
 }
 
